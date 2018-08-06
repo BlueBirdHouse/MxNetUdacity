@@ -22,7 +22,7 @@ Technically, we can write an SSD from the beginning to the end. However, this st
     
     Some common topics cannot be found in the above resources. I share my ideas with this package and appreciate better ideas, especially, when you do not agree with them.
     1. The CNN along can be used to classify things without fully connected layers.
-    2. b)	The reason that SSD estimates relative coordinates of binding boxes is that CNN shares their weights. As shown below, there are two blocks of features which represent a pair of snake twins. When the filter (blue rectangle) finds one head of snake at position A, it estimates a binding box (red rectangle). Then, when the filter moves to position B and finds another snake’s head, it should estimate a binding box with the same size. Note that the estimation is performed by the same CNN with the same weights, so it is impossible to give absolute coordinates of binding boxes. 
+    2. The reason that SSD estimates relative coordinates of binding boxes is that CNN shares their weights. As shown below, there are two blocks of features which represent a pair of snake twins. When the filter (blue rectangle) finds one head of snake at position A, it estimates a binding box (red rectangle). Then, when the filter moves to position B and finds another snake’s head, it should estimate a binding box with the same size. Note that the estimation is performed by the same CNN with the same weights, so it is impossible to give absolute coordinates of binding boxes. 
     
     ![image](DraftFigs/3.png)
 
@@ -54,7 +54,8 @@ Technically, we can write an SSD from the beginning to the end. However, this st
     5. Crosscheck11.py. Show the training results of “Crosscheck3.py.”
     
 - Results
-    My SSD is trained on Udacity’s Driving datasets for only two epochs, and it gives acceptable results. The training process is terminated for two reasons. First, the object “DataLoader” in “MxNet” do not support multiprocessing on Windows. The reading process on “p2.xlarge” is relatively slow. I do not have enough money to run virtual machines on AWS. Second, there are too few samples of traffic lights and pedestrians in the database. Additional codes should be used to fix this problem, which is beyond my learning plan. You can see the cars are well recognized, but traffic lights and pedestrians are not.
+    
+	My SSD is trained on Udacity’s Driving datasets for only two epochs, and it gives acceptable results. The training process is terminated for two reasons. First, the object “DataLoader” in “MxNet” do not support multiprocessing on Windows. The reading process on “p2.xlarge” is relatively slow. I do not have enough money to run virtual machines on AWS. Second, there are too few samples of traffic lights and pedestrians in the database. Additional codes should be used to fix this problem, which is beyond my learning plan. You can see the cars are well recognized, but traffic lights and pedestrians are not.
 
 ![image](Results/Figure_1.png)
 
