@@ -35,9 +35,9 @@ Technically, we can write an SSD from the beginning to the end. However, this st
         2. Decompress the above two files to the same folder. They should contain no file with the same name. 
         3. Remove the first line of “labels_crowdai.csv” and save it to the same folder with name “labels_crowdai_clean.csv.” 
         
-        ![image](DraftFigs/1.png)
+        ![image](DraftFigs/1.PNG)
 
-        ![image](DraftFigs/2.png)
+        ![image](DraftFigs/2.PNG)
         
         4. Open "testUdacityDatasets.py" and change the variable “dataDir” (Line 27) to the folder. Run “testUdacityDatasets.py” to make sure that everything is on track. There should be 21601 images because some bad samples are filtered. The interface of Udacity’s Driving datasets is in “MxNetUdacity_tools.py” and “MxNetUdacity_tools1.py.”
 - Virtual machine
