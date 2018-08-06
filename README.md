@@ -70,11 +70,11 @@ Technically, we can write an SSD from the beginning to the end. However, this st
 
 ![image](Results/Figure_7.png)
 
+![image](Results/Figure_10B.png)
+
 ![image](Results/Figure_8.png)
 
 ![image](Results/Figure_9B.png)
-
-![image](Results/Figure_10B.png)
 
 ![image](Results/Figure_11.png)
 
